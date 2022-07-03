@@ -84,3 +84,59 @@ if (x%2==0)
     Console.WriteLine(x + "");
     x++;
 }*/
+
+
+
+
+
+
+//Задача1 Семинар2.принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа
+/*int CutNumber()
+{
+    int num = new Random().Next(100,1000);
+    Console.WriteLine("Current random number is:" +num);
+    int des = num;
+    int result = (des%100)/10;
+    return result;
+}
+
+int number=CutNumber();
+Console.WriteLine("Result number is " + number);*/
+
+
+//Задача 2. Семинар 2.Выводит третью цифру заданного числа или сообщает, что третьей цифры нет
+/*int AnyNum(int num)
+{
+        if (num < 100) num=-1;
+    else 
+    {
+        while(num>=1000)
+        num=num/10;
+        num=num%10;
+        
+    }
+    return num;
+}
+Console.WriteLine("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(AnyNum(number));*/
+
+//Задача 3. Семинар 2. принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+/*void Nedelya(int num)
+{
+    if (num>=1 && num<6)
+    {
+        Console.WriteLine("Weekday");
+    }
+    else
+    if (num>5 && num<8)
+    {
+        Console.WriteLine("Weekend");
+    }
+}
+int number;
+
+Console.WriteLine("Введите день недели: ");
+number = Convert.ToInt32(Console.ReadLine());
+Nedelya(number);*/
