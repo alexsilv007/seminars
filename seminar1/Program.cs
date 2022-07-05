@@ -140,3 +140,38 @@ int number;
 Console.WriteLine("Введите день недели: ");
 number = Convert.ToInt32(Console.ReadLine());
 Nedelya(number);*/
+
+
+
+
+
+
+//Задача 1. Семинар 3.Программа, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+/*void Palin(int num)
+{
+    if (num/10000 == num%10 && num/1000%10 == (num%100)/10)
+    {
+        Console.WriteLine("It is palindrom");
+    }
+    else
+    Console.WriteLine("It is not palindrom");
+}
+
+Console.WriteLine("Введите пятизначное число:");
+int number = Convert.ToInt32(Console.ReadLine());
+Palin(number);*/
+
+//Задача 2. Семинар 3. Программа принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N
+/*void Qube(int N)
+{
+    int current = 1;
+    while (current<=N)
+    {
+        int Qube = current*current*current;
+        Console.WriteLine(Qube);
+        current++;
+    }
+}
+Console.WriteLine("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Qube(n);*/
