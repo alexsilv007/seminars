@@ -175,3 +175,57 @@ Palin(number);*/
 Console.WriteLine("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Qube(n);*/
+
+
+
+//Задача 1; Семинар 4.Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/*int SumN(int num)
+{
+  int sum=0;
+  if (num<0)
+  {
+    Console.WriteLine("-1");
+  }
+  else
+  {
+  while (num>0)
+      {
+        sum = sum+num%10;
+        num=num/10;
+      }
+}
+  return sum;
+}
+
+Console.WriteLine("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(SumN(number));*/
+
+
+//Задача 2. Семинар 4.Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+/*int[] CreateArray(int size)
+{
+      int[] newArray = new int[size];
+      Console.WriteLine("Creatung array here: ");
+      for(int i=0; i<size; i++)
+  {
+          Console.Write($"Input {i+1} element: ");
+          newArray[i] = Convert.ToInt32(Console.ReadLine());
+  }
+      Console.WriteLine();
+      return newArray;
+}
+
+void ShowArray(int[] array)
+{
+      for (int i = 0; i < array.Length; i++)
+          Console.Write(array[i] + " ");
+      Console.WriteLine();
+}
+
+Console.Write("Input size of array: ");
+int size = Convert.ToInt32(Console.ReadLine());
+
+int []array = CreateArray(size);
+ShowArray(array);*/
