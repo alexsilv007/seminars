@@ -229,3 +229,126 @@ int size = Convert.ToInt32(Console.ReadLine());
 
 int []array = CreateArray(size);
 ShowArray(array);*/
+
+
+
+
+
+
+
+//Зад 1.Сем 5.Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+/*int[] CreateRandomArray(int size)
+{
+  int[] newArray = new int [size];
+  for (int i =0; i<size; i++)
+      newArray[i] = new Random().Next(100, 1000);
+  return newArray;
+}
+int Deistvie(int[] array)
+{  
+    int count = 0;
+    for (int i=0; i<array.Length; i++)
+  
+    if (array[i]%2 ==0)
+    count ++;
+    
+    return count;
+}
+
+void ShowArray(int[] array)
+{
+  for(int i =0; i<array.Length; i++)
+      Console.Write(array[i] + " ");
+  Console.WriteLine();
+}
+
+Console.Write("Input size of massive: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = CreateRandomArray(size);
+ShowArray(array);
+int kolichestvo = Deistvie(array);
+Console.WriteLine("Kolichestvo chetnih chisel: " + kolichestvo);*/
+
+
+//Зад 2. Сем 5.Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
+/*int[] CreateRandomArray(int size, int minValue,int maxValue)
+{
+  int[] newArray = new int [size];
+  for (int i = 0; i < size; i++)
+      newArray[i] = new Random().Next(minValue, maxValue+1);
+  return newArray;
+}
+
+int Summa(int [] array)
+{
+  int sum = 0;
+  
+  for (int i = 0; i < array.Length; i++)
+  if (array[i]%2 != 0) sum += array[i]; 
+  
+  return sum;
+}
+
+void ShowArray(int[]array)
+{
+  for (int i = 0; i < array.Length; i++)
+    Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+
+Console.WriteLine("Input a size of array:");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input a min number");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input a max number");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] array = CreateRandomArray (size, min, max);
+ShowArray(array);
+Summa(array);
+Console.WriteLine("Summa nechetnih chisel: " + Summa(array));*/
+
+
+
+//Зад 3. Сем 5.Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+/*double [] CreateArray(int size)
+{
+  double[] newArray= new double [size];
+  for (int i=0; i<size; i++)
+  newArray[i] = new Random().Next(1, 100);
+  return newArray;
+}
+
+double Raznost(double[] array)
+{
+    double min = array[0];
+    double max = array[0];
+  
+        for (int i = 1; i<array.Length; i++)
+            if (array[i] < min) min = array[i];
+        
+        for (int i = 1; i<array.Length; i++)     
+            if (array[i] > max) max = array[i];
+        
+        double dif = max - min;
+       
+    return dif;
+}
+
+void ShowArray(double[]array)
+{
+  for (int i=0; i<array.Length; i++)
+    Console.Write(array[i] + " ");
+    
+    Console.WriteLine();
+}
+
+Console.WriteLine("Input a size of array:");
+int size = Convert.ToInt32(Console.ReadLine());
+Double[] array = CreateArray(size);
+ShowArray(array);
+double dif = Raznost(array);
+Console.WriteLine("Разница максимума и минимума: " + dif);*/
+
