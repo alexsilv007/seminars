@@ -352,3 +352,67 @@ ShowArray(array);
 double dif = Raznost(array);
 Console.WriteLine("Разница максимума и минимума: " + dif);*/
 
+
+
+
+
+
+//Зад1.Сем6.Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+/*int [] CreateArray(int size)
+{
+    int[] newArray = new int [size];
+    Console.WriteLine("Creating massive here: ");
+    for (int i = 0; i < size; i++)
+        {
+            Console.Write($"Input {i+1} element: ");
+            newArray[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine();
+        return newArray;
+} 
+
+int Deistvie (int[] Numbers)
+
+{
+    int count = 0;
+    for(int i = 0; i < Numbers.Length; i++)
+    {
+        if (Numbers[i] > 0) count +=1;
+    }
+    return count;
+}
+
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length;i++)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+
+Console.WriteLine("Input size of array");
+int size = Convert.ToInt32(Console.ReadLine());
+int [] array = CreateArray(size);
+ShowArray(array);
+int kolishestvo = Deistvie(array);
+Console.WriteLine("Введено чисел больше 0: " + kolishestvo);*/
+
+//Зад2.Сем6. Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; 
+//значения b1, k1, b2 и k2 задаются пользователем.
+/*int Tochka(int b1, int b2, int k1, int k2)
+{
+    int x = (b2-b1)/(k2-k1);
+    return x;
+}
+
+Console.WriteLine("Input k1: ");
+int k1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input k2: ");
+int k2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input b1: ");
+int b1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input b2: ");
+int b2 = Convert.ToInt32(Console.ReadLine());
+int x = Tochka(b1,b2,k1,k2);
+int y = k1 * x + b1;
+Console.WriteLine();
+Console.WriteLine($"Координаты точки пересечения: ({x},{y})");*/
