@@ -416,3 +416,119 @@ int x = Tochka(b1,b2,k1,k2);
 int y = k1 * x + b1;
 Console.WriteLine();
 Console.WriteLine($"Координаты точки пересечения: ({x},{y})");*/
+
+
+
+
+
+//Зад1.Сем.7.Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+/*double[,] Create2dArray(int columns, int rows)
+{
+  double[,] newArray = new double [columns, rows];
+
+        for(int i = 0; i < rows; i++)
+            for (int j = 1; j < columns; j++)
+              newArray[i, j] = new Random().NextDouble()*10;
+  return newArray;
+}
+
+void Show2dArray(double[,] array)
+{
+  for(int i = 0; i< array.GetLength(0); i++)
+  {
+      for (int j = 0; j < array.GetLength(1); j++)
+      Console.Write( array[i, j] + " ");
+      Console.WriteLine();
+  }
+}
+
+Console.WriteLine("Input number of rows: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input number of columns: ");
+int n = Convert.ToInt32(Console.ReadLine());
+double[,] array = Create2dArray(m, n);
+Show2dArray(array);*/
+
+//Зад 2. Сем.7. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+
+/*int Masiv()
+        {
+            Console.Write("Введите количество строк: ");
+            int n = Convert.ToInt32(Console.ReadLine()); 
+            Console.Write("Введите количество столбцов: ");
+            int m = Convert.ToInt32(Console.ReadLine()); 
+            Console.Write("Введите номер строки:");
+            int p1 = Convert.ToInt32(Console.ReadLine()) - 1;
+            Console.Write("Введите номер столбца:");
+            int p2 = Convert.ToInt32(Console.ReadLine()) - 1;
+            Random random = new Random();
+            int[,] array = new int[n, m];
+            Console.WriteLine("Готовый массив:");
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = random.Next(10, 99);
+                    Console.Write("{0} ", array[i, j]);
+                }
+                Console.WriteLine();
+            }
+            if (p1 < 0 | p1 > array.GetLength(0) - 1 | p2 < 0 | p2 > array.GetLength(1) - 1)
+            {
+                Console.WriteLine("Такого числа в массиве нет");
+            }
+            else
+            {
+                Console.WriteLine("Значение элемента массива = {0}", array[p1, p2]);
+            }
+         return array[p1, p2];
+         }
+Masiv();*/
+
+
+//Зад 3. Сем 7.Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+/*int [,] CreateRandom2dArray(int rows, int columns, int minValue, int maxValue)
+{
+  int[,] newArray = new int [rows, columns];
+
+  for(int i = 0; i < rows; i++)
+      for(int j = 0; j < columns; j++)
+          newArray[i,j] = new Random().Next(minValue, maxValue+1);
+  return newArray;
+}
+
+void Srednee(int[,] array)
+{
+  double[] Sum = new double[array.GetLength(1)];
+  for( int j = 0; j < array.GetLength(1); j++)
+      {
+        for(int i = 0; i < array.GetLength(0); i++)
+          {
+            Sum[j] = Sum[j] + array[i,j];
+          }
+          Sum[j] = Sum[j] / array.GetLength(1);
+          Console.WriteLine($"Среднеарифметическое столбца {j+1} = {Sum[j]}");
+      }
+}
+void Show2dArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+{
+      for (int j = 0; j < array.GetLength(1); j++)
+          Console.Write(array[i,j] + " ");
+      Console.WriteLine();
+}
+}
+Console.Write("Input number of  rows: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number of  columns: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min posiible value: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int [,] myArray = CreateRandom2dArray(m,n,min,max);
+Show2dArray(myArray);
+Srednee(myArray);*/
