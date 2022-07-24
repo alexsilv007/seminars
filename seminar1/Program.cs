@@ -532,3 +532,42 @@ int max = Convert.ToInt32(Console.ReadLine());
 int [,] myArray = CreateRandom2dArray(m,n,min,max);
 Show2dArray(myArray);
 Srednee(myArray);*/
+
+
+
+
+//Зад1 Сем9.Задайте значение N. Напишите программу, которая найдет кол-во цифр в числе N рекурсивным методом.
+
+/*int SumNums(int n)
+{
+  int current = 1;
+    int i = 1;
+    while ( n/i>=10)
+    {
+        i = i*10;
+        current++;
+    }
+    return current;
+}
+  
+Console.WriteLine("Input n : ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Количество цифр: " + SumNums(n));*/
+
+
+//Задача2.Семинар9. Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+/*int Sum(int m, int n)
+{
+  if(n>m)
+  {
+    return n + Sum(m, n-1);
+  }
+  else 
+  return n;
+}
+Console.WriteLine("Input n : ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Sum(n,m));*/
